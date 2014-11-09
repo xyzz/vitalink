@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library name="SceIoFilemgr" nid="0xDEADBEEF">
+     <module name="SceIoFilemgrForUser" nid="0xDEADBEEF">
+          <hint name="header_filename" value="kernel/iofilemgr.h" />
+          <struct name="SceIoStruct" typedef="TypeSceIoStruct">
+               <var name="field1">
+                    <description>Struct field</description>
+               </var>
+          </struct>
+          <func name="sceIoOpen" nid="0xDEADBEEF" return="SceUID">
+               <description>Description for sceIoOpen</description>
+               <args>
+                    <arg name="name" type="const char *">
+                         <description>First argument</description>
+                    </arg>
+               </args>
+          </func>
+          <var name="SceStdOut" nid="0xDEADBEEF">
+               <description>Standard output fd</description>
+          </var>
+     </module>
+     <module name="SceIoFilemgrForDriver" kernel="true" nid="0xDEADBEEF">
+     </module>
+</library>
+<library name="SceKernelWhatever">
+     <module name="SceProcessManager" nid="0xEEEEEEEE">
+          <func name="sceKernelExitProcess" nid="0x12345678"></func>
+     </module>
+</library>
