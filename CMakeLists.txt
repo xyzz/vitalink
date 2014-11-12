@@ -11,3 +11,4 @@ add_executable(vitalink
 	src/vitalink.cpp
 	src/utility.cpp
 )
+INSTALL(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/vitalink DESTINATION ${CMAKE_INSTALL_PREFIX})
